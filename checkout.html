@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - ART-G Galeri Seni</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logodipz.png" alt="ART-G Logo" class="logo">
+                <div class="logo-text">
+                    <h1 class="brand-name">ART-G</h1>
+                    <p class="tagline">
+                        <span class="paint-brush">🎨</span> Galeri Seni Indonesia
+                    </p>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="gallery.html">Galeri</a></li>
+                    <li><a href="about.html">Tentang</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Keranjang</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Checkout Section -->
+    <section class="checkout-section">
+        <div class="container">
+            <h1 class="page-title">Checkout</h1>
+            
+            <div class="checkout-container">
+                <div class="checkout-form">
+                    <form id="checkout-form">
+                        <!-- Shipping Information -->
+                        <div class="form-section">
+                            <h3>Informasi Pengiriman</h3>
+                            <div class="form-grid">
+                                <div class="form-group">
+                                    <label for="full-name">Nama Lengkap</label>
+                                    <input type="text" id="full-name" name="full-name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="phone">Nomor Telepon</label>
+                                    <input type="tel" id="phone" name="phone" required>
+                                </div>
+                                <div class="form-group full-width">
+                                    <label for="address">Alamat</label>
+                                    <input type="text" id="address" name="address" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="city">Kota</label>
+                                    <input type="text" id="city" name="city" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="zip-code">Kode Pos</label>
+                                    <input type="text" id="zip-code" name="zip-code" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="country">Negara</label>
+                                    <select id="country" name="country" required>
+                                        <option value="">Pilih Negara</option>
+                                        <option value="indonesia">Indonesia</option>
+                                        <option value="malaysia">Malaysia</option>
+                                        <option value="singapore">Singapura</option>
+                                        <option value="other">Lainnya</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <!-- Payment Method -->
+                        <div class="form-section">
+                            <h3>Metode Pembayaran</h3>
+                            <div class="payment-methods">
+                                <div class="payment-method">
+                                    <input type="radio" id="credit-card" name="payment-method" value="credit-card" checked>
+                                    <label for="credit-card">
+                                        <i class="fas fa-credit-card"></i>
+                                        Kartu Kredit
+                                    </label>
+                                </div>
+                                <div class="payment-method">
+                                    <input type="radio" id="bank-transfer" name="payment-method" value="bank-transfer">
+                                    <label for="bank-transfer">
+                                        <i class="fas fa-university"></i>
+                                        Transfer Bank
+                                    </label>
+                                </div>
+                                <div class="payment-method">
+                                    <input type="radio" id="cod" name="payment-method" value="cod">
+                                    <label for="cod">
+                                        <i class="fas fa-money-bill-wave"></i>
+                                        Bayar di Tempat
+                                    </label>
+                                </div>
+                            </div>
+                            
+                            <!-- Credit Card Form -->
+                            <div class="credit-card-form" id="credit-card-form">
+                                <div class="form-grid">
+                                    <div class="form-group full-width">
+                                        <label for="card-number">Nomor Kartu</label>
+                                        <input type="text" id="card-number" name="card-number" placeholder="1234 5678 9012 3456">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="expiry-date">Tanggal Kedaluwarsa</label>
+                                        <input type="text" id="expiry-date" name="expiry-date" placeholder="MM/YY">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="cvv">CVV</label>
+                                        <input type="text" id="cvv" name="cvv" placeholder="123">
+                                    </div>
+                                    <div class="form-group full-width">
+                                        <label for="card-name">Nama di Kartu</label>
+                                        <input type="text" id="card-name" name="card-name">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary submit-order">Pesan Sekarang</button>
+                    </form>
+                </div>
+                
+                <div class="order-summary">
+                    <h3>Ringkasan Pesanan</h3>
+                    <div class="order-items">
+                        <!-- Order items will be loaded dynamically -->
+                    </div>
+                    <div class="order-totals">
+                        <div class="total-row">
+                            <span>Subtotal</span>
+                            <span id="order-subtotal">Rp 0</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Pengiriman</span>
+                            <span id="order-shipping">Rp 0</span>
+                        </div>
+                        <div class="total-row">
+                            <span>Pajak</span>
+                            <span id="order-tax">Rp 0</span>
+                        </div>
+                        <div class="total-row grand-total">
+                            <span>Total</span>
+                            <span id="order-total">Rp 0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ART-G</h4>
+                    <p>Platform terdepan untuk seni Indonesia. Menghubungkan seniman dengan pecinta seni di seluruh dunia.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="gallery.html">Galeri</a></li>
+                        <li><a href="about.html">Tentang</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="gallery.html?category=abstract">Abstrak</a></li>
+                        <li><a href="gallery.html?category=portrait">Potret</a></li>
+                        <li><a href="gallery.html?category=landscape">Pemandangan</a></li>
+                        <li><a href="gallery.html?category=modern">Modern</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li><a href="#">Cara Berbelanja</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Kebijakan Pengembalian</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ART-G. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/checkout.js"></script>
+</body>
+</html>

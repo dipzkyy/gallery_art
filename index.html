@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ART-G - Galeri Seni Indonesia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Manrope:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logodipz.png" alt="ART-G Logo" class="logo">
+                <div class="logo-text">
+                    <h1 class="brand-name">ART-G</h1>
+                    <p class="tagline">
+                        <span class="paint-brush">🎨</span> Galeri Seni Indonesia
+                    </p>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html" class="active">Beranda</a></li>
+                    <li><a href="gallery.html">Galeri</a></li>
+                    <li><a href="about.html">Tentang</a></li>
+                    <li><a href="contact.html">Kontak</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Keranjang</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Temukan Karya Seni Terbaik Indonesia</h1>
+            <p class="hero-subtitle">Koleksi eksklusif lukisan, patung, dan karya seni dari seniman terbaik tanah air</p>
+            <a href="gallery.html" class="btn-primary">Jelajahi Koleksi</a>
+        </div>
+        <div class="hero-image">
+            <div class="image-slider">
+                <div class="slide active" style="background-image: url('https://cdn.pixabay.com/photo/2020/06/06/04/09/man-5265170_1280.jpg');"></div>
+                <div class="slide" style="background-image: url('https://cdn.pixabay.com/photo/2022/04/24/16/52/animal-7154059_1280.jpg');"></div>
+                <div class="slide" style="background-image: url('https://cdn.pixabay.com/photo/2022/03/30/13/16/betta-7101167_1280.jpg');"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Collections -->
+    <section class="featured-collections">
+        <div class="container">
+            <h2 class="section-title">Koleksi Unggulan</h2>
+            <div class="collections-grid">
+                <div class="collection-card fade-in">
+                    <div class="collection-image" style="background-image: url('https://cdn.pixabay.com/photo/2022/02/22/03/30/lake-7027943_1280.jpg');"></div>
+                    <div class="collection-info">
+                        <h3>Lukisan Alam</h3>
+                        <p>Karya seni yang terinspirasi dari keindahan alam Indonesia</p>
+                        <a href="gallery.html?category=landscape" class="btn-secondary">Jelajahi</a>
+                    </div>
+                </div>
+                <div class="collection-card fade-in">
+                    <div class="collection-image" style="background-image: url('https://i.pinimg.com/1200x/89/78/6a/89786ab9e6404fa53095159f1a2490ea.jpg');"></div>
+                    <div class="collection-info">
+                        <h3>Seni Modern</h3>
+                        <p>Karya kontemporer dengan teknik dan gaya yang inovatif</p>
+                        <a href="gallery.html?category=modern" class="btn-secondary">Jelajahi</a>
+                    </div>
+                </div>
+                <div class="collection-card fade-in">
+                    <div class="collection-image" style="background-image: url('https://cdn.pixabay.com/photo/2021/01/01/16/06/hand-5879027_1280.jpg');"></div>
+                    <div class="collection-info">
+                        <h3>Abstrak</h3>
+                        <p>Ekspresi bebas seniman dalam bentuk dan warna</p>
+                        <a href="gallery.html?category=abstract" class="btn-secondary">Jelajahi</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section class="featured-products">
+        <div class="container">
+            <h2 class="section-title">Karya Terbaru</h2>
+            <div class="products-grid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+            <div class="text-center">
+                <a href="gallery.html" class="btn-primary">Lihat Semua Karya</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <div class="container">
+            <h2>Berlangganan Newsletter</h2>
+            <p>Dapatkan informasi terbaru tentang pameran, karya baru, dan promo khusus</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Masukkan email Anda" required>
+                <button type="submit" class="btn-primary">Berlangganan</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ART-G</h4>
+                    <p>Platform terdepan untuk seni Indonesia. Menghubungkan seniman dengan pecinta seni di seluruh dunia.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="gallery.html">Galeri</a></li>
+                        <li><a href="about.html">Tentang</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="gallery.html?category=abstract">Abstrak</a></li>
+                        <li><a href="gallery.html?category=portrait">Potret</a></li>
+                        <li><a href="gallery.html?category=landscape">Pemandangan</a></li>
+                        <li><a href="gallery.html?category=modern">Modern</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li><a href="#">Cara Berbelanja</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Kebijakan Pengembalian</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ART-G. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

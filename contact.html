@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontak - ART-G Galeri Seni</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Manrope:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo-container">
+                <img src="images/logodipz.png" alt="ART-G Logo" class="logo">
+                <div class="logo-text">
+                    <h1 class="brand-name">ART-G</h1>
+                    <p class="tagline">
+                        <span class="paint-brush">🎨</span> Galeri Seni Indonesia
+                    </p>
+                </div>
+            </div>
+            <nav class="nav">
+                <ul>
+                    <li><a href="index.html">Beranda</a></li>
+                    <li><a href="gallery.html">Galeri</a></li>
+                    <li><a href="about.html">Tentang</a></li>
+                    <li><a href="contact.html" class="active">Kontak</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i> Keranjang</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1 class="page-title">Hubungi Kami</h1>
+            <p class="page-subtitle">Kami senang mendengar dari Anda. Hubungi kami untuk pertanyaan atau informasi lebih lanjut.</p>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h2 class="section-title">Hubungi Kami</h2>
+                    <p class="contact-description">
+                        Punya pertanyaan tentang karya seni, seniman, atau layanan kami? Kami siap membantu.
+                        Hubungi kami melalui saluran di bawah ini.
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">📧</div>
+                            <div class="method-details">
+                                <h3>Email</h3>
+                                <p>info@art-g.com</p>
+                                <p>Kami akan merespons dalam 24 jam</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">📞</div>
+                            <div class="method-details">
+                                <h3>Telepon</h3>
+                                <p>+62 123 456 789</p>
+                                <p>Senin-Jumat dari 9 pagi hingga 6 sore</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">📍</div>
+                            <div class="method-details">
+                                <h3>Kantor</h3>
+                                <p>Gedung Art District</p>
+                                <p>Jakarta, Indonesia 12345</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-contact">
+                        <h3>Ikuti Kami</h3>
+                        <div class="social-links">
+                            <a href="#"><i class="fab fa-instagram"></i></a>
+                            <a href="#"><i class="fab fa-facebook"></i></a>
+                            <a href="#"><i class="fab fa-twitter"></i></a>
+                            <a href="#"><i class="fab fa-pinterest"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <h3 class="form-title">Kirim Pesan</h3>
+                        
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nama Lengkap</label>
+                            <input type="text" id="name" class="form-input" placeholder="Nama Anda" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Alamat Email</label>
+                            <input type="email" id="email" class="form-input" placeholder="email@contoh.com" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Subjek</label>
+                            <input type="text" id="subject" class="form-input" placeholder="Tentang apa ini?" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Pesan</label>
+                            <textarea id="message" class="form-textarea" placeholder="Ceritakan lebih lanjut tentang pertanyaan Anda..." rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn-primary form-submit">Kirim Pesan</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Bagaimana cara membeli karya seni?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Cukup jelajahi galeri kami, klik pada karya seni yang Anda suka, dan pilih "Tambah ke Keranjang".
+                            Lanjutkan ke checkout untuk menyelesaikan pembelian Anda. Kami menerima berbagai metode pembayaran
+                            termasuk kartu kredit dan transfer bank.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Apakah Anda mengirim ke luar negeri?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Ya, kami mengirim ke seluruh dunia. Biaya pengiriman dan waktu pengiriman bervariasi tergantung pada
+                            lokasi Anda dan ukuran karya seni. Anda akan melihat biaya pengiriman yang tepat selama
+                            checkout sebelum menyelesaikan pembelian Anda.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Apa kebijakan pengembalian Anda?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Kami menawarkan kebijakan pengembalian 14 hari untuk semua karya seni. Jika Anda tidak sepenuhnya puas
+                            dengan pembelian Anda, Anda dapat mengembalikannya dalam kondisi aslinya untuk pengembalian dana penuh.
+                            Karya khusus atau pesanan mungkin memiliki kondisi pengembalian yang berbeda.
+                        </p>
+                    </div>
+                </div>
+                
+                <div class="faq-item">
+                    <button class="faq-question">
+                        Bisakah saya memesan karya seni khusus?
+                        <span class="faq-toggle">+</span>
+                    </button>
+                    <div class="faq-answer">
+                        <p>
+                            Tentu saja! Kami bekerja dengan banyak seniman berbakat yang menerima pesanan.
+                            Hubungi kami dengan kebutuhan Anda, dan kami akan mencocokkan Anda dengan seniman
+                            yang dapat mewujudkan visi Anda.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>ART-G</h4>
+                    <p>Platform terdepan untuk seni Indonesia. Menghubungkan seniman dengan pecinta seni di seluruh dunia.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-instagram"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-pinterest"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Menu</h4>
+                    <ul>
+                        <li><a href="index.html">Beranda</a></li>
+                        <li><a href="gallery.html">Galeri</a></li>
+                        <li><a href="about.html">Tentang</a></li>
+                        <li><a href="contact.html">Kontak</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Kategori</h4>
+                    <ul>
+                        <li><a href="gallery.html?category=abstract">Abstrak</a></li>
+                        <li><a href="gallery.html?category=portrait">Potret</a></li>
+                        <li><a href="gallery.html?category=landscape">Pemandangan</a></li>
+                        <li><a href="gallery.html?category=modern">Modern</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Bantuan</h4>
+                    <ul>
+                        <li><a href="#">Cara Berbelanja</a></li>
+                        <li><a href="#">Pengiriman</a></li>
+                        <li><a href="#">Kebijakan Pengembalian</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 ART-G. Semua hak dilindungi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script>
+        // FAQ toggle functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            const faqQuestions = document.querySelectorAll('.faq-question');
+            
+            faqQuestions.forEach(question => {
+                question.addEventListener('click', function() {
+                    const answer = this.nextElementSibling;
+                    const toggle = this.querySelector('.faq-toggle');
+                    
+                    // Toggle active class
+                    this.classList.toggle('active');
+                    
+                    // Toggle answer visibility
+                    if (answer.style.maxHeight) {
+                        answer.style.maxHeight = null;
+                        toggle.textContent = '+';
+                    } else {
+                        answer.style.maxHeight = answer.scrollHeight + 'px';
+                        toggle.textContent = '−';
+                    }
+                });
+            });
+            
+            // Contact form submission
+            const contactForm = document.querySelector('.contact-form');
+            if (contactForm) {
+                contactForm.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    alert('Terima kasih atas pesan Anda! Kami akan segera menghubungi Anda.');
+                    this.reset();
+                });
+            }
+        });
+    </script>
+</body>
+</html>
